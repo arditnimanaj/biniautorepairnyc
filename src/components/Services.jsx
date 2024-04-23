@@ -8,6 +8,7 @@ import brake from "../resources/brake.png";
 import engine from "../resources/engine.png";
 import inspection from "../resources/inspection.png";
 import LogoSlider from "./LogoSlider";
+import { Link } from "react-router-dom";
 
 function Services() {
   const services = [
@@ -69,7 +70,7 @@ function Services() {
         {services.map((service) => {
           return (
             <div
-              className="p-14 border rounded-lg justify-center gap-3 flex flex-col"
+              className="p-8 border-4 rounded-lg justify-center gap-3 flex flex-col"
               key={service.name}
             >
               <div className="border rounded-full p-4 bg-rose-800 w-fit mx-auto">
@@ -81,9 +82,12 @@ function Services() {
           );
         })}
       </div>
-      <button className="border-rose-900 rounded-lg px-4 py-2 bg-rose-900 text-white font-bold">
-        Explore our services
-      </button>
+
+      <Link to={"/services"}>
+        <button className="border-rose-900 rounded-lg px-4 py-2 bg-rose-900 text-white font-bold">
+          Explore our services
+        </button>
+      </Link>
       <div className="px-10 py-20">
         <LogoSlider />
       </div>

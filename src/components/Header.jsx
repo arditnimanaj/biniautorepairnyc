@@ -34,12 +34,14 @@ function Header() {
         </Link>
         <ul className="hidden md:flex justify-center gap-24 uppercase">
           <Link to={"/"}>Home</Link>
-          <Link to={"/"}>Services</Link>
-          <Link to={"/"}>About Us</Link>
+          <Link to={"/services"}>Services</Link>
+          <Link to={"/aboutus"}>About Us</Link>
         </ul>
-        <button className="border-rose-900 rounded-lg px-4 py-2 bg-rose-900">
-          Contact Me
-        </button>
+        <Link to={"/contact"}>
+          <button className="border-rose-900 rounded-lg px-4 py-2 bg-rose-900">
+            Contact Me
+          </button>
+        </Link>
       </nav>
     </div>
   );
