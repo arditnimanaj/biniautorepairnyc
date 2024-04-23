@@ -1,17 +1,14 @@
 import React from "react";
 import "../components/services.css";
-import logo1 from "../resources/carLogo/carlogo (1).svg";
-import logo2 from "../resources/carLogo/carlogo (2).svg";
-import logo3 from "../resources/carLogo/carlogo (3).svg";
-import logo4 from "../resources/carLogo/carlogo (4).svg";
-import logo5 from "../resources/carLogo/carlogo (5).svg";
-import logo6 from "../resources/carLogo/carlogo (6).svg";
+
 import autorepair from "../resources/auto-repair.png";
 import autotune from "../resources/autotune.png";
 import preventive from "../resources/preventive.png";
 import brake from "../resources/brake.png";
 import engine from "../resources/engine.png";
 import inspection from "../resources/inspection.png";
+import LogoSlider from "./LogoSlider";
+
 function Services() {
   const services = [
     {
@@ -52,32 +49,6 @@ function Services() {
     },
   ];
 
-  const images = [
-    {
-      src: logo1,
-      alt: "Car Logo",
-    },
-    {
-      src: logo2,
-      name: "Model S",
-    },
-    {
-      src: logo3,
-      alt: "Car Logo",
-    },
-    {
-      src: logo4,
-      alt: "Car Logo",
-    },
-    {
-      src: logo5,
-      alt: "Car Logo",
-    },
-    {
-      src: logo6,
-      alt: "Car Logo",
-    },
-  ];
   return (
     <div className="py-4">
       <h1 className="font-bold text-2xl mb-10">
@@ -113,16 +84,8 @@ function Services() {
       <button className="border-rose-900 rounded-lg px-4 py-2 bg-rose-900 text-white font-bold">
         Explore our services
       </button>
-      <div className="hidden md:flex justify-around px-4 py-20 ">
-        {images.map((image) => {
-          return (
-            <img
-              src={image.src}
-              alt={image.alt}
-              className="w-20 h-20 opacity-40 hover:opacity-100"
-            />
-          );
-        })}
+      <div className="px-10 py-20">
+        <LogoSlider />
       </div>
     </div>
   );

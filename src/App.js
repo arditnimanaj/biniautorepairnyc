@@ -10,7 +10,6 @@ function App() {
       <Header />
       <Hero />
       <Services />
-
       <Footer />
     </div>
   );
