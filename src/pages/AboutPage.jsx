@@ -33,19 +33,27 @@ function AboutPage() {
         <h1 className="font-bold text-3xl">Bini Autorepair INC</h1>
       </div>
       <span className="px-10 py-2">
-        Welcome to Bini Autorepair INC, your trusted auto repair shop in New
-        York City. With over 25 years of experience, we have been providing
-        exceptional service to our customers. Our team of skilled technicians is
-        dedicated to delivering prompt, efficient, and high-quality workmanship
-        on every job. At Bini Autorepair INC, we prioritize customer
-        satisfaction and strive to exceed your expectations with personalized
-        service tailored to your needs. With extensive experience across all
-        areas of the auto industry, we have earned a reputation as the go-to
-        destination for automotive services. Customers from all boroughs choose
-        us for our outstanding service and attention to detail. Conveniently
-        located at 10 Eastman Pl, Yonkers, NY 10701, Bini Autorepair INC is your
-        one-stop shop for all your auto repair needs. Trust us to provide
-        top-notch service and get you back on the road safely.
+        Welcome to{" "}
+        <span className="font-bold text-lg text-rose-900">
+          Bini Autorepair INC
+        </span>
+        , your trusted auto repair shop in New York City. With over{" "}
+        <span className="font-bold text-lg text-rose-900">25</span> years of
+        experience, we have been providing exceptional service to our customers.
+        Our team of skilled technicians is dedicated to delivering prompt,
+        efficient, and high-quality workmanship on every job. At Bini Autorepair
+        INC , we prioritize customer satisfaction and strive to exceed your
+        expectations with personalized service tailored to your needs. With
+        extensive experience across all areas of the auto industry, we have
+        earned a reputation as the go-to destination for automotive services.
+        Customers from all boroughs choose us for our outstanding service and
+        attention to detail. Conveniently located at{" "}
+        <span className="font-bold text-lg text-rose-900">
+          10 Eastman Pl, Yonkers, NY 10701
+        </span>
+        , Bini Autorepair INC is your one-stop shop for all your auto repair
+        needs. Trust us to provide top-notch service and get you back on the
+        road safely.
       </span>
       <div className="grid grid-cols-2 md:grid-cols-4 gap-8 px-6 py-12">
         {info.map((info) => {
