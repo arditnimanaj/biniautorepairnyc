@@ -2,7 +2,7 @@ import React from "react";
 
 function Footer() {
   return (
-    <div className="bg-zinc-900 pb-4 text-white">
+    <div className="bg-zinc-900 text-white pb-4">
       <div className="gap-10 md:gap-0 grid grid-cols-1 md:grid-cols:2 lg:grid-cols-3 py-10">
         <div className="flex flex-col gap-3 md:gap-10">
           <h1>Location</h1>
@@ -50,7 +50,7 @@ function Footer() {
           </div>
         </div>
       </div>
-      <span className="font-bold px-2 py-6 mt-4">
+      <span className="font-bold px-2 mt-4">
         Copyrights 2024 Bini AutoRepair INC. All Rights Reserved.
       </span>
     </div>

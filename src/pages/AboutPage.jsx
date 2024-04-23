@@ -28,11 +28,11 @@ function AboutPage() {
   ];
   return (
     <div className="flex flex-col">
-      <div>
-        <span>About</span>
-        <h1>Bini Autorepair INC</h1>
+      <div className="py-4">
+        <span className="uppercase text-gray-500 font-bold">About</span>
+        <h1 className="font-bold text-3xl">Bini Autorepair INC</h1>
       </div>
-      <span className="p-20">
+      <span className="px-10 py-2">
         Welcome to Bini Autorepair INC, your trusted auto repair shop in New
         York City. With over 25 years of experience, we have been providing
         exceptional service to our customers. Our team of skilled technicians is
@@ -47,7 +47,7 @@ function AboutPage() {
         one-stop shop for all your auto repair needs. Trust us to provide
         top-notch service and get you back on the road safely.
       </span>
-      <div className="grid grid-cols-2 md:grid-cols-4 gap-8 px-6 py-6">
+      <div className="grid grid-cols-2 md:grid-cols-4 gap-8 px-6 py-12">
         {info.map((info) => {
           return (
             <div className="justify-center items-center flex flex-col">
@@ -55,7 +55,7 @@ function AboutPage() {
                 <img
                   src={info.image}
                   alt={info.title}
-                  className="w-8 h-8"
+                  className="w-8 h-8 opacity-50"
                 ></img>
               </div>
               <h1 className="uppercase font-bold"> {info.title}</h1>
