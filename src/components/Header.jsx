@@ -80,7 +80,11 @@ function Header() {
           </div>
         </div>
         <Link to={"/"}>
-          <img src={logo} alt="" className="w-[200px] h-20 object-cover" />
+          <img
+            src={logo}
+            alt=""
+            className="w-[180px] md:w-[200px] h-20 object-cover"
+          />
         </Link>
         <ul className="hidden md:flex justify-center gap-24 uppercase">
           <Link to={"/"} className="hover:text-rose-900">
@@ -94,7 +98,7 @@ function Header() {
           </Link>
         </ul>
         <Link to={"/contact"} className="hover:text-black">
-          <button className="border-rose-900 rounded-lg px-4 py-2 bg-rose-900">
+          <button className="border-rose-900 rounded-lg px-4 py-2 bg-rose-900 text-sm md:text-md">
             Contact Me
           </button>
         </Link>

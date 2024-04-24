@@ -1,6 +1,12 @@
 import React from "react";
+import { useLocation } from "react-router-dom";
 
 function Footer() {
+  const { pathname } = useLocation();
+  console.log(pathname);
+  if (pathname === "/contact") {
+    return null;
+  }
   return (
     <div className="bg-zinc-900 text-white pb-4">
       <div className="gap-10 md:gap-0 grid grid-cols-1 md:grid-cols:2 lg:grid-cols-3 py-10">
