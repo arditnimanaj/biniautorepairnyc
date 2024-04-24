@@ -61,8 +61,9 @@ function LogoSlider() {
     slidesToScroll: 1,
     autoplay: true,
     cssEase: "linear",
-    autoplaySpeed: 50,
+    autoplaySpeed: 2000, // Increase autoplay speed
     initialSlide: 0,
+
     responsive: [
       {
         breakpoint: 1024,
