@@ -57,6 +57,7 @@ function LogoSlider() {
   var settings = {
     infinite: true,
     speed: 5000,
+
     slidesToShow: 5,
     slidesToScroll: 1,
     autoplay: true,
@@ -92,7 +93,7 @@ function LogoSlider() {
     ],
   };
   return (
-    <Slider {...settings}>
+    <Slider {...settings} className="hidden md:block">
       {images.map((image) => {
         return (
           <img

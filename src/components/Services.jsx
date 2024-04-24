@@ -51,12 +51,12 @@ function Services() {
   ];
 
   return (
-    <div className="py-4">
+    <div className="py-6">
       <h1 className="font-bold text-2xl mb-10">
         Bini Autorepair INC in New York
       </h1>
 
-      <p className="px-32">
+      <p className="px-10 md:px-32">
         <span className="font-bold text-lg">Bini Autorepair INC</span> is a
         trusted auto repair shop located in New York City. With over 25 years of
         experience, we have been serving the community with excellence and
@@ -66,7 +66,7 @@ function Services() {
         equipped to handle it all. Trust us to keep your vehicle running
         smoothly and safely on the road.
       </p>
-      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 px-14 pt-16 pb-8">
+      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 px-8 md:px-14 pt-16 pb-8">
         {services.map((service) => {
           return (
             <div

@@ -4,8 +4,8 @@ import logo from "../resources/logo.png";
 function Header() {
   const [toggleSidebar, setToggleSidebar] = useState(false);
   return (
-    <div className="sticky">
-      <div className="text-sm flex justify-between px-10 py-2 bg-zinc-900  text-rose-900 font-bold">
+    <div className="sticky z-10">
+      <div className=" text-xs md:text-sm flex justify-between px-10 py-2 bg-zinc-900  text-rose-900 font-bold">
         <div className="items-center gap-2 flex">
           <i class="fa-solid fa-location-dot" style={{ color: "#ffffff" }}></i>
           <a href="https://www.google.com/maps/place/BiniAutoRepairINC/@40.9515721,-73.8751458,15z/data=!4m2!3m1!1s0x0:0x58aeec725b7b64cb?sa=X&ved=1t:2428&ictx=111">
@@ -26,14 +26,17 @@ function Header() {
         </div>
       </div>
 
-      <nav className="w-full flex justify-between items-center px-12 py-3 bg-black text-white font-bold">
-        <div className="block md:hidden border px-3 py-1 rounded-md">
-          <button onClick={() => setToggleSidebar(!toggleSidebar)}>
+      <nav className="w-full flex justify-between items-center  px-12 py-3 bg-black text-white font-bold">
+        <button
+          onClick={() => setToggleSidebar(!toggleSidebar)}
+          className="block md:hidden"
+        >
+          <div className="block md:hidden border px-3 py-1 rounded-md">
             <i class="fa-solid fa-bars"></i>
-          </button>
-        </div>
+          </div>
+        </button>
         <div
-          className={`fixed  inset-0 bg-black z-0 md:hidden transition-transform ${
+          className={`fixed inset-0 bg-black z-0 md:hidden transition-transform ${
             toggleSidebar ? "transform-none" : "-translate-x-full"
           }`}
           onClick={() => setToggleSidebar(!toggleSidebar)}
@@ -80,11 +83,17 @@ function Header() {
           <img src={logo} alt="" className="w-[200px] h-20 object-cover" />
         </Link>
         <ul className="hidden md:flex justify-center gap-24 uppercase">
-          <Link to={"/"}>Home</Link>
-          <Link to={"/services"}>Services</Link>
-          <Link to={"/aboutus"}>About Us</Link>
+          <Link to={"/"} className="hover:text-rose-900">
+            Home
+          </Link>
+          <Link to={"/services"} className="hover:text-rose-900">
+            Services
+          </Link>
+          <Link to={"/aboutus"} className="hover:text-rose-900">
+            About Us
+          </Link>
         </ul>
-        <Link to={"/contact"}>
+        <Link to={"/contact"} className="hover:text-black">
           <button className="border-rose-900 rounded-lg px-4 py-2 bg-rose-900">
             Contact Me
           </button>

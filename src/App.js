@@ -7,7 +7,6 @@ import { Routes, Route } from "react-router-dom";
 import Homepage from "./pages/Homepage.jsx";
 import ServicesPage from "./pages/ServicesPage.jsx";
 import AboutPage from "./pages/AboutPage.jsx";
-import ContactPage from "./pages/ContactPage.jsx";
 
 function App() {
   return (
@@ -17,7 +16,6 @@ function App() {
         <Route path="/" exact element={<Homepage />} />
         <Route path="/services" element={<ServicesPage />} />
         <Route path="/aboutus" element={<AboutPage />} />
-        <Route path="/contact" element={<ContactPage />} />
       </Routes>
       <Footer />
     </div>

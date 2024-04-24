@@ -1,8 +1,8 @@
 import React from "react";
-
+import logo from "../resources/blacklogo.png";
 function VisitMap() {
   return (
-    <div className="flex flex-col gap-6">
+    <div className="flex flex-col gap-6 pb-8">
       <div className="">
         <h1 className="text-gray-600">No appointment required</h1>
         <h1 className=" text-3xl text-rose-900 font-bold uppercase">
@@ -23,6 +23,11 @@ function VisitMap() {
           <a href="https://www.gps.ie/">gps tracker sport</a>
         </iframe>
       </div>
+      <img
+        src={logo}
+        alt=""
+        className="w-30 h-20 object-contain opacity-80"
+      ></img>
     </div>
   );
 }
