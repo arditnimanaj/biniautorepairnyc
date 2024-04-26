@@ -60,7 +60,7 @@ function ContactPage() {
         <h1 className="border-2 border-rose-900 w-fit mx-auto px-4 py-2">
           Location
         </h1>
-        <div className="px-5 md:px-4 py-10">
+        <div className="px-2 md:px-4 py-10">
           <iframe
             width="100%"
             height="600"
