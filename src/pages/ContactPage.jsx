@@ -22,12 +22,12 @@ function ContactPage() {
             <span>Yonkers, NY 10701</span>
           </div>
         </a>
-        <a href="tel:+13479687883" className="flex mx-auto gap-4 items-center">
+        <a href="tel:+13475820864" className="flex mx-auto gap-4 items-center">
           {" "}
           <div className="text-rose-900">
             <i class="fa-solid fa-phone fa-xl"></i>
           </div>
-          <span>(347)968-7883</span>
+          <span>(347)582-0864</span>
         </a>
         <a
           href="mailto:biniautorepairinc@gmail.com"
@@ -60,7 +60,7 @@ function ContactPage() {
         <h1 className="border-2 border-rose-900 w-fit mx-auto px-4 py-2">
           Location
         </h1>
-        <div className="px-10 md:px-4 py-10">
+        <div className="px-5 md:px-4 py-10">
           <iframe
             width="100%"
             height="600"

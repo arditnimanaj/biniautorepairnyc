@@ -14,8 +14,8 @@ function Header() {
         </div>
         <div className="items-center gap-2 flex">
           <i class="fa-solid fa-phone" style={{ color: "#ffffff" }}></i>
-          <a href="tel:+13479687883">
-            <span>(347)968-7883</span>
+          <a href="tel:+13475820864">
+            <span>(347)582-0864</span>
           </a>
         </div>
         <div className="hidden md:flex items-center gap-2 ">
