@@ -67,7 +67,9 @@ function ServicesPage() {
     <div>
       <div className="block md:flex px-10 md:px-40 py-20 gap-10">
         <div className="w-full md:w-[50%] mx-auto flex flex-col gap-4">
-          <h1 className="font-bold text-xl">Services you can trust us</h1>
+          <h1 className="font-bold text-xl font-montserrat text-rose-900">
+            Services you can trust us
+          </h1>
           <div className="grid grid-cols-2 border-4 bg-zinc-200 rounded-md ">
             {services.map((service) => {
               return (
@@ -75,17 +77,17 @@ function ServicesPage() {
                   <img
                     src={service.img}
                     alt={service.title}
-                    className="w-10 h-10"
+                    className="w-10 h-10 grayscale"
                   ></img>
-                  <h1>{service.title}</h1>
+                  <h1 className="uppercase font-chivo">{service.title}</h1>
                 </div>
               );
             })}
           </div>
         </div>
         <div className="pt-10 md:pt-0 md:w-[50%] mx-auto">
-          <div className="flex flex-col gap-4">
-            <h1 className="font-bold text-xl">
+          <div className="flex flex-col gap-4 font-montserrat">
+            <h1 className="font-bold text-xl font-chivo text-rose-900">
               Your Trusted Auto Repair Destination in NYC
             </h1>
             <span>
@@ -109,7 +111,7 @@ function ServicesPage() {
               trust us to keep your vehicle running smoothly and reliably on the
               road.{" "}
             </span>
-            <span>
+            <span className="text-rose-900 font-bold">
               {" "}
               Book your appointment with Bini Autorepair INC today and
               experience the difference of our unparalleled service and
@@ -118,14 +120,19 @@ function ServicesPage() {
           </div>
         </div>
       </div>
-      <span className="mx-auto flex justify-center text-gray-600">
+      <span className="mx-auto flex justify-center text-gray-600 font-dancing text-2xl">
         and many more...
       </span>
-      <a href="tel:+13475820864" className="flex flex-col gap-2 pb-4">
+      <a
+        href="tel:+13475820864"
+        className="flex flex-col gap-2 pb-4 font-chivo"
+      >
         <p className=" font-bold text-3xl text-rose-900">CALL US NOW !! </p>
         <span className=" font-bold text-3xl text-rose-900">+13475820864</span>
       </a>
-      <h1 className="mx-auto flex justify-center text-gray-600">or visit us</h1>
+      <h1 className="mx-auto flex justify-center text-gray-600 font-dancing text-2xl">
+        or visit us
+      </h1>
       <div className="px-20 py-10">
         <iframe
           width="100%"

@@ -29,10 +29,14 @@ function AboutPage() {
   return (
     <div className="flex flex-col">
       <div className="py-4">
-        <span className="uppercase text-gray-500 font-bold">About</span>
-        <h1 className="font-bold text-3xl">Bini Autorepair INC</h1>
+        <span className="text-gray-500 font-bold font-dancing text-3xl">
+          About
+        </span>
+        <h1 className="font-bold text-3xl font-chivo text-rose-900">
+          Bini Autorepair INC
+        </h1>
       </div>
-      <span className="px-10 py-2">
+      <span className="px-10 py-2 font-montserrat">
         Welcome to{" "}
         <span className="font-bold text-lg text-rose-900">
           Bini Autorepair INC
@@ -66,8 +70,10 @@ function AboutPage() {
                   className="w-8 h-8 opacity-50"
                 ></img>
               </div>
-              <h1 className="uppercase font-bold"> {info.title}</h1>
-              <span className="text-gray-500">{info.description}</span>
+              <h1 className="uppercase font-bold font-chivo"> {info.title}</h1>
+              <span className="text-gray-500 font-montserrat">
+                {info.description}
+              </span>
             </div>
           );
         })}

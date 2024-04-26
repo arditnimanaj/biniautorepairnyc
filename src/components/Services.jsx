@@ -52,11 +52,11 @@ function Services() {
 
   return (
     <div className="py-6">
-      <h1 className="font-bold text-2xl mb-10">
+      <h1 className="font-bold text-2xl mb-10 font-chivo uppercase">
         Bini Autorepair INC in New York
       </h1>
 
-      <p className="px-10 md:px-32">
+      <p className="px-10 md:px-32 font-montserrat">
         <span className="font-bold text-lg">Bini Autorepair INC</span> is a
         trusted auto repair shop located in New York City. With over 25 years of
         experience, we have been serving the community with excellence and
@@ -76,15 +76,17 @@ function Services() {
               <div className="border rounded-full p-4 bg-rose-800 w-fit mx-auto">
                 <img alt="" src={service.img} className="w-20 h-20 mx-auto" />
               </div>
-              <h1 className="font-bold text-lg">{service.name}</h1>
-              <span>{service.description}</span>
+              <h1 className="font-bold text-lg font-montserrat">
+                {service.name}
+              </h1>
+              <span className="font-chivo">{service.description}</span>
             </div>
           );
         })}
       </div>
 
       <Link to={"/services"}>
-        <button className="border-rose-900 rounded-lg px-4 py-2 bg-rose-900 text-white font-bold">
+        <button className="font-chivo border-rose-900 rounded-lg px-4 py-2 bg-rose-900 text-white font-bold">
           Explore our services
         </button>
       </Link>

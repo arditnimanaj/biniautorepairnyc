@@ -5,7 +5,7 @@ function Header() {
   const [toggleSidebar, setToggleSidebar] = useState(false);
   return (
     <div className="sticky z-10">
-      <div className=" text-xs md:text-sm flex justify-between px-10 py-2 bg-zinc-900  text-rose-900 font-bold">
+      <div className=" font-chivo text-xs md:text-sm flex justify-between px-10 py-2 bg-zinc-900  text-rose-900 font-bold">
         <div className="items-center gap-2 flex">
           <i class="fa-solid fa-location-dot" style={{ color: "#ffffff" }}></i>
           <a href="https://www.google.com/maps/place/BiniAutoRepairINC/@40.9515721,-73.8751458,15z/data=!4m2!3m1!1s0x0:0x58aeec725b7b64cb?sa=X&ved=1t:2428&ictx=111">
@@ -86,7 +86,7 @@ function Header() {
             className="w-[180px] md:w-[200px] h-20 object-cover"
           />
         </Link>
-        <ul className="hidden md:flex justify-center gap-24 uppercase">
+        <ul className="hidden md:flex justify-center gap-24 uppercase font-chivo">
           <Link to={"/"} className="hover:text-rose-900">
             Home
           </Link>
@@ -98,7 +98,7 @@ function Header() {
           </Link>
         </ul>
         <Link to={"/contact"} className="hover:text-black">
-          <button className="border-rose-900 rounded-lg px-4 py-2 bg-rose-900 text-sm md:text-md">
+          <button className="font-chivo border-rose-900 rounded-lg px-4 py-2 bg-rose-900 text-sm md:text-md">
             Contact Me
           </button>
         </Link>

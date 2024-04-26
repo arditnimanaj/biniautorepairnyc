@@ -3,7 +3,7 @@ import logo from "../resources/blacklogo.png";
 function VisitMap() {
   return (
     <div className="flex flex-col gap-6 pb-8">
-      <div className="">
+      <div className="font-chivo">
         <h1 className="text-gray-600">No appointment required</h1>
         <h1 className=" text-3xl text-rose-900 font-bold uppercase">
           Visit US

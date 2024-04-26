@@ -8,7 +8,7 @@ function Footer() {
     return null;
   }
   return (
-    <div className="bg-zinc-900 text-white pb-4">
+    <div className="bg-zinc-900 text-white pb-4 font-chivo">
       <div className="gap-10 md:gap-0 grid grid-cols-1 md:grid-cols:2 lg:grid-cols-3 py-10">
         <div className="flex flex-col gap-3 md:gap-10">
           <span className="border-2 w-fit mx-auto p-2 border-rose-900">

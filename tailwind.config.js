@@ -2,7 +2,13 @@
 module.exports = {
   content: ["./src/**/*.{js,jsx,ts,tsx}"],
   theme: {
-    extend: {},
+    extend: {
+      fontFamily: {
+        chivo: ["Chivo", "sans-serif"],
+        montserrat: ["Montserrat Alternates", "sans-serif"],
+        dancing: ["Dancing Script", "sans-serif"],
+      },
+    },
   },
   plugins: [],
 };
