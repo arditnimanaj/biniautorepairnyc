@@ -26,7 +26,7 @@ function Header() {
         </div>
       </div>
 
-      <nav className="w-full flex justify-between items-center px-3 md:px-12 py-3 bg-black text-white font-bold">
+      <nav className=" font-chivo w-full flex justify-between items-center px-3 md:px-12 py-3 bg-black text-white font-bold">
         <button
           onClick={() => setToggleSidebar(!toggleSidebar)}
           className="block md:hidden"

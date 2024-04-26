@@ -2,7 +2,7 @@ import React from "react";
 
 function ContactPage() {
   return (
-    <div className="grid gap-12 grid-cols-1 md:grid-cols-2 bg-black h-full text-white">
+    <div className=" font-chivo grid gap-12 grid-cols-1 md:grid-cols-2 bg-black h-full text-white">
       <div className="flex flex-col gap-8">
         <h1 className=" border-2 border-rose-900 w-fit mx-auto px-4 py-2">
           Contact
