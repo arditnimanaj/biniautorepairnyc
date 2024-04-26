@@ -65,7 +65,7 @@ function ServicesPage() {
   ];
   return (
     <div>
-      <div className="block md:flex px-10 md:px-40 py-20 gap-10">
+      <div className="block md:flex px-6 md:px-40 py-20 gap-10">
         <div className="w-full md:w-[50%] mx-auto flex flex-col gap-4">
           <h1 className="font-bold text-xl font-montserrat text-rose-900">
             Services you can trust us
@@ -73,13 +73,15 @@ function ServicesPage() {
           <div className="grid grid-cols-2 border-4 bg-zinc-200 rounded-md ">
             {services.map((service) => {
               return (
-                <div className="items-center flex gap-4 p-6">
+                <div className="items-center flex gap-1 px-1 py-6">
                   <img
                     src={service.img}
                     alt={service.title}
                     className="w-10 h-10 grayscale"
                   ></img>
-                  <h1 className="uppercase font-chivo">{service.title}</h1>
+                  <h1 className="uppercase font-chivo text-sm">
+                    {service.title}
+                  </h1>
                 </div>
               );
             })}
@@ -133,7 +135,7 @@ function ServicesPage() {
       <h1 className="mx-auto flex justify-center text-gray-600 font-dancing text-2xl">
         or visit us
       </h1>
-      <div className="px-20 py-10">
+      <div className="px-10 md:px-20 py-10">
         <iframe
           width="100%"
           height="600"

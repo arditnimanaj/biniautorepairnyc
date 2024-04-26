@@ -9,7 +9,7 @@ function VisitMap() {
           Visit US
         </h1>
       </div>
-      <div className="w-full px-10 py-10">
+      <div className="w-full px-4 md:px-10 py-10">
         <iframe
           width="100%"
           height="600"
